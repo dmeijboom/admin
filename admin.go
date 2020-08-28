@@ -6,6 +6,7 @@ import (
 	"reflect"
 
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/jinzhu/inflection"
 	"github.com/qor/assetfs"
 	"github.com/qor/qor"
@@ -21,6 +22,7 @@ type AdminConfig struct {
 	// SiteName set site's name, the name will be used as admin HTML title and admin interface will auto load javascripts, stylesheets files based on its value
 	SiteName        string
 	DB              *gorm.DB
+	ConnStr         string
 	Auth            Auth
 	AssetFS         assetfs.Interface
 	SessionManager  session.ManagerInterface
@@ -52,6 +54,15 @@ func New(config interface{}) *Admin {
 		admin.AdminConfig = &AdminConfig{DB: c.DB}
 	} else if c, ok := config.(*AdminConfig); ok {
 		admin.AdminConfig = c
+
+		if c.DB == nil {
+			db, err := gorm.Open("postgres", c.ConnStr)
+			if err != nil {
+				panic(err)
+			}
+
+			admin.AdminConfig.DB = db
+		}
 	} else {
 		admin.AdminConfig = &AdminConfig{}
 	}
