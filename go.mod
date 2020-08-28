@@ -9,16 +9,17 @@ require (
 	github.com/gorilla/context v1.1.1 // indirect
 	github.com/gorilla/sessions v1.2.0 // indirect
 	github.com/gosimple/slug v1.9.0 // indirect
-	github.com/jinzhu/gorm v1.9.15
+	github.com/jinzhu/gorm v1.9.16
 	github.com/jinzhu/inflection v1.0.0
-	github.com/jinzhu/now v1.0.1
-	github.com/microcosm-cc/bluemonday v1.0.3 // indirect
+	github.com/jinzhu/now v1.1.1
+	github.com/microcosm-cc/bluemonday v1.0.4 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/qor/assetfs v0.0.0-20170713023933-ff57fdc13a14
+	github.com/qor/bindatafs v0.0.0-20180208124510-71f37a9bdd10 // indirect
 	github.com/qor/media v0.0.0-20200720100650-60c52edf57cb
 	github.com/qor/middlewares v0.0.0-20170822143614-781378b69454 // indirect
 	github.com/qor/oss v0.0.0-20191031055114-aef9ba66bf76 // indirect
-	github.com/qor/qor v0.0.0-20200715033016-13227382be83
+	github.com/qor/qor v0.0.0-20200729071734-d587cffbbb93
 	github.com/qor/responder v0.0.0-20171031032654-b6def473574f
 	github.com/qor/roles v0.0.0-20171127035124-d6375609fe3e
 	github.com/qor/serializable_meta v0.0.0-20180510060738-5fd8542db417 // indirect
@@ -28,4 +29,5 @@ require (
 	github.com/theplant/htmltestingutils v0.0.0-20190423050759-0e06de7b6967
 	github.com/theplant/testingutils v0.0.0-20190603093022-26d8b4d95c61
 	github.com/yosssi/gohtml v0.0.0-20200519115854-476f5b4b8047 // indirect
+	golang.org/x/net v0.0.0-20200822124328-c89045814202 // indirect
 )
