@@ -1,4 +1,4 @@
-module github.com/qor/admin
+module github.com/dmeijboom/admin
 
 go 1.13
 

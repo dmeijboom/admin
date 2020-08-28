@@ -8,8 +8,8 @@ import (
 
 	"github.com/jinzhu/gorm"
 	"github.com/jinzhu/now"
-	"github.com/qor/admin"
-	. "github.com/qor/admin/tests/dummy"
+	"github.com/dmeijboom/admin"
+	. "github.com/dmeijboom/admin/tests/dummy"
 	"github.com/theplant/testingutils"
 )
 

@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"net/http/httptest"
 
+	"github.com/dmeijboom/admin"
 	"github.com/jinzhu/gorm"
-	"github.com/qor/admin"
 	. "github.com/qor/admin/tests/dummy"
 )
 
